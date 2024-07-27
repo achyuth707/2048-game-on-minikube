@@ -16,7 +16,8 @@ Start Minikube with docker as driver
 
 •	minikube status
 
-DOCKER Commands 
+*DOCKER Commands*
+
 docker login												 --> Login to your docker hub
 
 docker pull achyuth707/webpage-cmd 							 --> To pull the image from docker hub
@@ -72,3 +73,39 @@ docker images 												 --> Listing images
 docker rmi <Image ID>										 --> Removing an image
 
 docker history												 --> history of an image
+
+*Kubernetes Commands*
+
+kubectl get nodes 				          -->  # Display all node information
+										
+kubectl get nodes -o wide   	          -->  # Show more information about all nodes
+										 
+kubectl get pods 				          -->  # Display all container group information
+										
+kubectl get pods -o wide    	          -->  # Show more information about all pods
+										
+kubectl get ns					          -->  # Display all namespace information
+									
+kubectl get ns -o yaml      	          -->  # Show yaml information about all namespaces
+										
+kubectl get ns -o wide      	          -->  # Show more information about all namespaces
+									
+kubectl get deploy				          -->  # Display all deployments information
+									
+kubectl describe deploy 		          -->  # Describe deployments information
+									
+kubectl get deploy -o wide  	          -->  # Show more information about all deployments
+									
+kubectl get deploy -o yaml  	          -->  # Show yaml information about all deployments
+									
+kubectl apply -f deployment.yaml          -->  # To start the deployment
+									
+kubectl delete -f deployment.yaml         -->  # To delete the deployment
+									
+kubectl get all -n <namespace>		      -->  # To get all the resources from specific namespace
+								
+kubectl get svc						      -->  # Display all services information
+								 
+kubectl get ingress					      -->  # Display all ingress information
+								
+kubectl logs -n <namespace> <pod-name>	  -->  # To fetch the logs from pod-name

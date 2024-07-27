@@ -109,3 +109,29 @@ kubectl get svc						      -->  # Display all services information
 kubectl get ingress					      -->  # Display all ingress information
 								
 kubectl logs -n <namespace> <pod-name>	  -->  # To fetch the logs from pod-name
+
+*Minikube Commands*
+
+minikube start 								   --> # To start minikube cluster
+
+minikube start --driver=docker				   --> # To start minikube with specific driver
+
+minikube delete								   --> # To delete minikube
+
+minikube addons enable ingress				   --> # To enable ingress controller using minikube addons
+
+minikube ip									   --> # To fetch minikube ip
+
+minikube tunnel								   --> # To create a network tunnel that allows services with type LoadBalancer to be accessible on your local network
+
+minikube addons disable ingress 			   --> # To disable ingress controller using minikube addons
+
+minikube update-check 						   --> # To check if there is a newer version of minikube available
+
+minikube status								   --> # To check minikube status
+
+minikube dashboard 							   --> # It will open kubernetes cluster in your default browser
+
+minikube dashboard --url					   --> # It will give URL for kubernetes cluster
+
+minikube service <service name> -n <namespace> --> # To retrieve the URL where the service can be accessed

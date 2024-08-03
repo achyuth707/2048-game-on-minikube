@@ -134,4 +134,6 @@ minikube dashboard 							   --> # It will open kubernetes cluster in your defau
 
 minikube dashboard --url					   --> # It will give URL for kubernetes cluster
 
-minikube service <service name> -n <namespace> --> # To retrieve the URL where the service can be accessed
+minikube service <service name> --namespace=<namespace> --> # To retrieve the URL where the service can be accessed
+
+minikube service ingress-nginx-controller --namespace=ingress-nginx --url --> # To retrieve the URL where the service can be accessed
